@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frappe Coffee Cafe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/41e9e7dd0f.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="home">
+    <nav>
+        <div class="navigation container">
+            <div class="logo_container">
+                <a href="#home">
+                <img src="images/logo.png" alt="logo" height="90" width="80">
+                </a>
+            </div>
+
+            <div class="bar_icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="nav_links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#order">Order</a>
+                <a href="login.html">Login</a>
+                <a href="#cart">View Cart</a>
+              </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="container">
+        <div class="hero">
+            <div class="hero_image">
+                <img src="images/main.png" alt="main" height="300" width="300" />
+            </div>
+            <div class="main_side">
+                <h1> Let’s Enjoy a Perfect Cup!</h1>
+                <p> Welcome to Frappe Coffee Cafe – where every sip is a delight.  
+                  Discover your favorite brew from our rich selection below.</p>
+                <a href="#feature" class="feature-link">
+                <button class="Explore">Explore Now</button>
+                </a>
+            </div>
+        </div>
+        <section class="features" id="feature">
+            <a href="#coffee" class="feature-link">
+            <div class="feature">  
+                <img src="images/coffee.png" alt="coffee" height="60" width="60" />
+                <div class="feature_content">
+                    <h3>Our Coffee</h3>
+                    Your favourite one...
+                </div>
+            </div>
+            </a>
+            <a href="#hot" class="feature-link">
+            <div class="feature">
+                <img src="images/burger.png" alt="coffee" height="50" width="50" />
+                <div class="feature_content">
+                    <h3>Hot and Chessy</h3>
+                    Take a taste of it.
+                </div>
+            </div>
+            </a>
+            <a href="#tea" class="feature-link">
+            <div class="feature">
+                <img src="images/Tea.png" alt="coffee" height="70" width="70" />
+                <div class="feature_content">
+                    <h3>Our Tea</h3>
+                    Enjoy Tea in Kulhadd.
+                </div>
+            </div>
+            </a>
+        </section>
+        <div class="divider"></div>
+        <div class="menu">
+            <div id="coffee">
+            <div class="section-title"><h3>OUR COFFEE</h3></div>
+            <div class="grid_scroll_wrapper">
+            <div class="grid"> 
+                <div class="image-card"><img src="images/Americano.png"><div class="image-label"> <span class="item-name">Americano</span><!--<span class="item-price">₹70 <a href="">🛒</a></span> --></div></div>
+                <div class="image-card"> <img src="images/Capachino.png"><div class="image-label"><span class="item-name">Capachino</span><!--<span class="item-price">₹70 <a href="">🛒</a></span>--> </div></div>
+                <div class="image-card"> <img src="images/Espresso.png" ><div class="image-label"><span class="item-name">Espresso</span><!--<span class="item-price">₹70 <a href="">🛒</a></span> --></div></div>
+                <div class="image-card"> <img src="images/FlatWhite.png" ><div class="image-label"><span class="item-name">Flatwhite</span><!--<span class="item-price">₹70 <a href="">🛒</a></span> --></div></div>
+                <div class="image-card"> <img src="images/Mocha.png" ><div class="image-label"><span class="item-name">Mocha</span><!--<span class="item-price">₹70 <a href="">🛒</a></span> </div>--></div>
+            </div>
+            </div>
+            </div>
+            <div id="hot">
+            <div class="section-title"><h3>HOT AND CHEESY</h3></div>
+            <div class="grid_scroll_wrapper">
+                <div class="grid">
+                    <div class="image-card"> <img src="images/Paneer Tikka Sandwich.png" ><div class="image-label"><span class="item-name">Paneer Tikka Sandwich</span><!--<span class="item-price">₹70 <a href="">🛒</a></span> --></div></div>
+                    <div class="image-card"> <img src="images/VegSandwich.png"><div class="image-label"><span class="item-name">Veg Sandwich</span><!--<span class="item-price">₹70 <a href="">🛒</a></span> --></div></div>
+                    <!-- <div class="image-card"> <img src="images/Espresso.png" ><div class="image-label">Espresso</div></div>
+                    <div class="image-card"> <img src="images/FlatWhite.png" ><div class="image-label">Flat WHite</div></div>
+                    <div class="image-card"> <img src="images/Mocha.png" ><div class="image-label">Mocha</div></div> -->
+                </div>
+                </div>
+                </div>
+                <div id="tea">
+                <div class="section-title"><h3>OUR TEA</h3></div>
+                <div class="grid_scroll_wrapper">
+                    <div class="grid">
+                        <div class="image-card"> <img src="images/SimpleTea.png" ><div class="image-label">Simple Tea</div></div>
+                        <div class="image-card"> <img src="images/gingertea.png"><div class="image-label">Ginger Tea</div></div>
+                        <div class="image-card"> <img src="images/BlackTea.png" ><div class="image-label">Black Tea</div></div>
+                        <div class="image-card"> <img src="images/GreenTea.png" ><div class="image-label">Green Tea</div></div>
+                        <div class="image-card"> <img src="images/jaggerytea.png" ><div class="image-label">Jaggery Tea</div></div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+          document.getElementById("navLinks").classList.toggle("show");
+        }
+        
+          // Hide login if user is already logged in
+          window.addEventListener("DOMContentLoaded", () => {
+            const isLoggedIn = localStorage.getItem("isLoggedIn");
+          
+            const navLinks = document.getElementById("navLinks");
+            const loginLink = document.querySelector('a[href="login.html"]');
+          
+            if (isLoggedIn === "true") {
+              if (loginLink) {
+                loginLink.style.display = "none";
+              }
+          
+              const logoutBtn = document.createElement("a");
+              logoutBtn.href = "#";
+              logoutBtn.textContent = "Logout";
+              logoutBtn.addEventListener("click", () => {
+                localStorage.removeItem("isLoggedIn");
+                window.location.reload();
+              });
+          
+              // Prevent duplicate logout links
+              if (!document.querySelector('a[href="#"][data-logout]')) {
+                logoutBtn.setAttribute("data-logout", "true");
+                navLinks.appendChild(logoutBtn);
+              }
+            }
+          });
+          
+
+      </script>
+           
+</body>
+<footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Frappe Coffee Cafe Logo" width="50">
+        <h3>Frappe Coffee Cafe</h3>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#coffee">Coffee</a>
+        <a href="#hot">Hot & Cheesy</a>
+        <a href="#tea">Tea</a>
+      </div>
+      <div class="footer-contact">
+        <p>Email: hello@frappecafe.com</p>
+        <p>Phone: +917830241013</p>
+        <p>Address: Near McDonald's Gajraula ,Distt Amroha Uttar Pradesh</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Frappe Coffee Cafe | All rights reserved.
+    </div>
+  </footer>
+  
+
+</html>
