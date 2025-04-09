@@ -300,6 +300,21 @@
       padding: 6px;
     }
   }
+.image-card.hovered {
+  transform: scale(1.2);
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.image-card.hovered img {
+  transform: scale(1.035);
+  box-shadow: 0 10px 20px rgb(255, 255, 255);
+}
+
+.image-card.hovered .image-label {
+  opacity: 1;
+}
+
   
 
 
