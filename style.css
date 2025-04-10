@@ -5,6 +5,7 @@
   }
   
   html, body {
+    overflow-x: hidden;
     background-image: url('images/background1.jpg');
     color: #fff;
     line-height: 1.4;
@@ -112,33 +113,24 @@
   
   .hero {
     display: flex;
-    padding:50px 100px;
-    gap: 50px;
-    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 100px;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   
   .main_side {
-    flex:1;
-    min-width:300px;
     display: flex;
-    flex-direction:column;
-    gap:20px;
+    flex-direction: column;
   }
   
   .main_side h1 {
-    font-size:48px;
-    font-weight:bold;
-    margin:0;
-    line-height:1.2;
-    white-space:nowrap;
+    padding: 20px 0;
+    font-size: 42px;
+    font-weight: 500;
   }
-  .main_side p {
-    font-size: 16px;
-    text-align: center;
-  }
-
   
   button {
     margin-top: 20px;
@@ -156,7 +148,7 @@
   .Explore {
     border-radius: 15px;
     background-color: orange;
-    align-self: center;
+    align-self: flex-start;
   }
   
   @media(max-width: 780px) {
@@ -229,7 +221,6 @@
   .grid_scroll_wrapper {
     overflow: auto;
     padding: 40px ;
-    -webkit-overflow-scrolling: touch;
   }
   
   .grid_scroll_wrapper::-webkit-scrollbar {
