@@ -212,6 +212,7 @@
   .grid_scroll_wrapper {
     overflow: auto;
     padding: 40px ;
+    -webkit-overflow-scrolling: touch;
   }
   
   .grid_scroll_wrapper::-webkit-scrollbar {
@@ -301,7 +302,7 @@
     }
   }
 .image-card.hovered {
-  transform: scale(1.2);
+  transform: scale(1.1);
   z-index: 2;
   border-radius: 10px;
 }
