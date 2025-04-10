@@ -161,26 +161,26 @@
   
   @media(max-width: 780px) {
     .hero {
-    flex-direction: auto;
-    display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+         flex-wrap: wrap;
+
     }
   
     .hero_image {
       display: flex;
-      justify-content: center;
     }
   
     .main_side {
-      margin:auto;
       gap: 10px;
-      padding: 10px;
+
     }
+    .main_side h1{
+      align-items: center;
+      width: 300px;
+    }
+    .main_side p{
+      width:300px;
+    }
+
   }
   
   /* ========== FEATURES ========== */
