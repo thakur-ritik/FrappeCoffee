@@ -122,7 +122,6 @@
   
   .main_side {
     display: flex;
-    flex-direction: column;
   }
   
   .main_side h1 {
@@ -152,7 +151,14 @@
   
   @media(max-width: 780px) {
     .hero {
-      flex-direction: auto;
+    flex-direction: auto;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     }
   
     .hero_image {
