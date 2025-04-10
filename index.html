@@ -149,19 +149,33 @@
               }
             }
           });
-        document.querySelectorAll('.image-card').forEach(card => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('hovered');
-      } else {
-        entry.target.classList.remove('hovered');
-      }
-    });
-  }, { threshold: 0.5 });
 
-  observer.observe(card);
-});
+
+
+            document.addEventListener("DOMContentLoaded", () => {
+              // Only on touch devices
+              if ('ontouchstart' in window) {
+                const cards = document.querySelectorAll('.image-card');
+          
+                const observer = new IntersectionObserver((entries) => {
+                  entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                      entry.target.classList.add('hovered');
+                    } else {
+                      entry.target.classList.remove('hovered');
+                    }
+                  });
+                }, {
+                  threshold: 0.5, // adjust as needed
+                });
+          
+                cards.forEach(card => {
+                  observer.observe(card);
+                });
+              }
+            });
+          
+
 
           
 
